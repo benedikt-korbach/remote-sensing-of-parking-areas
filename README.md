@@ -18,26 +18,26 @@ This repository contains the code of my Master Thesis ["Remote Sensing of Car an
 
 ## Code Sources
 
-The main code source that was of this project is the [Segmentation Models](https://github.com/qubvel/segmentation_models) library by Pavel Iakubovskii, 2019, that was used to run the semantic segmentation algorithms in [Parking Segmentation](https://github.com/benedikt-korbach/remote-sensing-of-parking-areas/blob/main/scripts/03_image_segmentation/03_segment_parking.ipynb). Further smaller code sources are referenced in the respective scripts. Further, ChatGPT was used for easily automatable tasks like creating simple plots, writing function docstrings, compiling several functions into one for ease of use, or creating loops.
+The main code source used in this project is the [Segmentation Models](https://github.com/qubvel/segmentation_models) library by Pavel Iakubovskii, 2019, that was used to run the semantic segmentation algorithms in [Parking Segmentation](https://github.com/benedikt-korbach/remote-sensing-of-parking-areas/blob/main/scripts/03_image_segmentation/03_segment_parking.ipynb). Further code sources are referenced in the respective scripts. Moreover, ChatGPT was used for easily automatable tasks like creating simple plots, writing function docstrings, compiling several functions into one for ease of use, or creating loops.
 
 ## Project Overview
 
 The widespread adoption of electric vehicles (EVs) necessitates the expansion of public charging infrastructure, particularly along highways to facilitate long-distance, low-carbon transportation. For optimal charging site planning, accurate information on parking lot size and type is crucial. Public parking inventories and community-based databases such as OpenStreetMap (OSM), however, often provide unreliable and inconsistent parking information. This paper addresses these challenges by leveraging aerial imagery to accurately estimate parking lots for cars and trucks at German highway rest areas. As a main contribution, a dataset of 246 high-resolution images of rest areas is created from publicly accessible sources, with manually verified and corrected ground-truth annotations gathered from OSM. Various semantic segmentation algorithms (U-Net, LinkNet, Feature Pyramid Network) trained on this dataset are assessed for their ability to detect specific parking lots. The best-performing model demonstrates robust performance in parking area extraction, achieving a mean Intersection over Union (mIoU) score of 0.70 on full-scale test cases. This method offers a validation technique to enhance the accuracy of parking inventory data along highways, thereby informing the strategic development of charging infrastructure.
 
-For more detailed information (data collection strategy, methods, evaluation metric, experimental setup, results, discussion, policy recommendations), have a look into my [Master Thesis](korbach_benedikt_master_thesis.pdf).
+For more detailed information (realted work, data collection strategy, methods, evaluation metric, experimental setup, results, discussion, policy recommendations), have a look into my [Master Thesis](korbach_benedikt_master_thesis.pdf).
 
 ## Results
 
-The best-performing Model (LinkNet with a ResNet-101 backbone and trainable encoder weights, trained on a batch size of 8), achieved a mean IoU score of 0.70 on full-scale test cases. Three exemplary model prections are shown in the following, with car parking outlined in red, truck parking in blue, and pull-off zones in green.
+The best-performing Model (LinkNet with a ResNet-101 backbone and trainable encoder weights, trained on a batch size of 8), achieved a mean IoU score of 0.70 on full-scale test cases, particularly excelling in truck parking lot detection, while also yielding satisfactory results for car parking areas. Three exemplary model predictions are shown in the following, with car parking outlined in red, truck parking in blue, and pull-off zones in green.
+
+**Rest Area Erfurter Becken**
+![Model Prediction 3](figures/best_model_prediction_test_cases/lon_10.9544554_lat_50.9407623_Erfurter%20Becken%20-%20Ost.png)
 
 **Rest Area Burgberg**
 ![Model Prediction 1](figures/best_model_prediction_test_cases/lon_10.1726923_lat_51.0086765_Burgberg.png)
 
 **Rest Area Wolfsgrund**
 ![Model Prediction 2](figures/best_model_prediction_test_cases/lon_9.6807029_lat_52.8134767_Wolfsgrund%20West.png)
-
-**Rest Area Erfurter Becken**
-![Model Prediction 3](figures/best_model_prediction_test_cases/lon_10.9544554_lat_50.9407623_Erfurter%20Becken%20-%20Ost.png)
 
 
 
