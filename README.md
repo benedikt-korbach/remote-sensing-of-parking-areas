@@ -24,7 +24,12 @@ The widespread adoption of electric vehicles (EVs) necessitates the expansion of
 
 The best-performing Model (LinkNet with a ResNet-101 backbone and trainable encoder weights, trained on a batch size of 8), achieved a mean IoU score of 0.70 on full-scale test cases. Three exemplary model prections are shown in the following, with car parking outlined in red, truck parking in blue, and pull-off zones in green.
 
+**Rest Area Burgberg**
 ![Model Prediction 1](figures/best_model_prediction_test_cases/lon_10.1726923_lat_51.0086765_Burgberg.png)
+
+**Rest Area Wolfsgrund**
 ![Model Prediction 2](figures/best_model_prediction_test_cases/lon_9.6807029_lat_52.8134767_Wolfsgrund%20West.png)
+
+**Rest Area Erfurter Becken**
 ![Model Prediction 3](figures/best_model_prediction_test_cases/lon_10.9544554_lat_50.9407623_Erfurter%20Becken%20-%20Ost.png)
 
