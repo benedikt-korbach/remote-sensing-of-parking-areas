@@ -18,7 +18,7 @@ This repository contains the code of my Master Thesis ["Remote Sensing of Car an
 
 ## Code Sources
 
-The main code source used in this project is the [Segmentation Models](https://github.com/qubvel/segmentation_models) library by Pavel Iakubovskii, 2019, that was used to run the semantic segmentation algorithms in [Parking Segmentation](https://github.com/benedikt-korbach/remote-sensing-of-parking-areas/blob/main/scripts/03_image_segmentation/03_segment_parking.ipynb). Further code sources are referenced in the respective scripts. Moreover, ChatGPT was used for easily automatable tasks like creating simple plots, writing function docstrings, compiling several functions into one for ease of use, or creating loops.
+The main code source of this project is the [Segmentation Models](https://github.com/qubvel/segmentation_models) library by Pavel Iakubovskii, 2019, that was used to run the semantic segmentation algorithms in [Parking Segmentation](https://github.com/benedikt-korbach/remote-sensing-of-parking-areas/blob/main/scripts/03_image_segmentation/03_segment_parking.ipynb). Further code sources are referenced in the respective scripts. Moreover, ChatGPT was used for easily automatable tasks like creating simple plots, writing function docstrings, compiling several functions into one for ease of use, or creating loops.
 
 ## Project Overview
 
