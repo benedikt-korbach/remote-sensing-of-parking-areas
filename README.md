@@ -1,3 +1,3 @@
 # Remote Sensing of Car and Truck Parking Lots at German Highway Rest Areas using Semantic Segmentation
 
-This repository contains the code of my Master Thesis ["Remote Sensing of Car and Truck Parking Lots at German Highway Rest Areas using Semantic Segmentation"](korbach_benedikt_master_thesis.pdf). 
+This repository contains the code of my Master Thesis ["Remote Sensing of Car and Truck Parking Lots at German Highway Rest Areas using Semantic Segmentation"](korbach_benedikt_master_thesis.pdf) in partial fulfillment of the requirements for the M.Sc. in Data Science for Public Policy, supervised by Prof. Lynn Kaack, PhD (Hertie School). It does, however, not include any data or full model files due to their large file sizes. The proceess to download the images of rest areas used in this research can be found in [Download Images](https://github.com/benedikt-korbach/remote-sensing-of-parking-areas/blob/main/scripts/01_data_acquisition/01c_download_images.ipynb).
